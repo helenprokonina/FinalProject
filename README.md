@@ -2,7 +2,7 @@
 
 ## Datasets
 
-Everything is inside the IRMAS folder
+Everything is inside the [IRMAS](https://www.upf.edu/web/mtg/irmas) folder
 
 ### Training
 IRMAS-TrainingData - dirrectory with folders, containing audiofiles for each instrument
