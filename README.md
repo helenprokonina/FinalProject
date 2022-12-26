@@ -42,8 +42,7 @@ contains all custom classes, necessary for correct work:
 ##### expected parameters (and examples):
 
 ```bash
-data_aggregation.py --download "IRMAS" --train "IRMAS-TrainingData"
---save_train "dataloaders/dataloader_train.pth" --save_val "dataloaders/dataloader_val.pth"
+data_aggregation.py --download "IRMAS" --train "IRMAS-TrainingData" --save_train "dataloaders/dataloader_train.pth" --save_val "dataloaders/dataloader_val.pth"
 ```
 
 #### train.py
@@ -56,8 +55,7 @@ data_aggregation.py --download "IRMAS" --train "IRMAS-TrainingData"
 ##### expected parameters (and examples):
 
 ```bash
-train.py --train "dataloaders/dataloader_train.pth" --val "dataloaders/dataloader_val.pth"
---save_model  "models/resnet18.pt"
+train.py --train "dataloaders/dataloader_train.pth" --val "dataloaders/dataloader_val.pth" --save_model  "models/resnet18.pt"
 ```
 
 #### inference.py
@@ -69,7 +67,6 @@ train.py --train "dataloaders/dataloader_train.pth" --val "dataloaders/dataloade
 ##### expected parameters (and examples):
 
 ```bash
-inference.py --download "IRMAS" --inference "/IRMAS-TestingData-Part2/IRTestingData-Part2/"
---load_model  "models/resnet18.pt"
+inference.py --download "IRMAS" --inference "/IRMAS-TestingData-Part2/IRTestingData-Part2/" --load_model  "models/resnet18.pt"
 ```
 
