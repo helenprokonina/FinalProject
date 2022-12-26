@@ -2,7 +2,7 @@
 
 ## Datasets
 
-Everything is inside the [IRMAS](https://www.upf.edu/web/mtg/irmas) folder
+[IRMAS](https://www.upf.edu/web/mtg/irmas) dataset
 
 ### Training
 IRMAS-TrainingData - dirrectory with folders, containing audiofiles for each instrument
@@ -22,7 +22,7 @@ ResNet18 (custom)
 #### instrument_classification_multi.ipynb
 
 #### Description
-This notebook contains the whole work from data aggregation from the Training folder till the classification of one-instrument records and inference on the data where more than one incstrument can be found (Test folders).
+This notebook contains the whole work from data aggregation from the Training folder till the classification of one-instrument records and inference on the data where more than one instrument can be found (Test folders).
 
 ## Python scripts
 
@@ -49,7 +49,7 @@ data_aggregation.py --download "IRMAS" --train "IRMAS-TrainingData"
 #### train.py
 * imports dataloaders,
 * trains the model ResNet18, 
-* make plots of training and validation losses and accuracies, 
+* makes plots of training and validation losses and accuracies, 
 * saves plots to the figures folder,
 * saves the model into models folder.
 
