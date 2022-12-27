@@ -122,7 +122,7 @@ print("\n")
 
 
 # Create training and validation data loaders
-inf_dl = torch.utils.data.DataLoader(inf_ds, batch_size=1, shuffle=True)
+inf_dl = torch.utils.data.DataLoader(inf_ds, batch_size=1, shuffle=False)
 
 
 
@@ -162,7 +162,7 @@ for j, data in enumerate(inf_dl):
     acc=len(target_set.intersection(pred_set))/len(target_set)
 
 
-    print(f"accuracy for a record {j}: {acc:.2f}")
+    print(f"accuracy for a record {indexes[j]}: {acc:.2f}")
 
 
 
